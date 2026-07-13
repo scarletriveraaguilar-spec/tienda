@@ -1,0 +1,188 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f5f7;
+    color:#1f2933;
+}
+
+.cabeza{
+width: 100%;
+    min-height:100px;
+    background-color: #0b8c08;
+    padding: 0 10%;
+    display:flex;         /* ordena elemntos */
+    justify-content: flex-start; /* coloca los elemento en fila*/
+    align-items: center;
+    box-shadow: 0 4px 18px rgba(31,41,51,0.08);
+    position:sticky;
+    top:0;
+    z-index:100;
+
+}
+
+/* todo lo que esta dentro de cabeza*/
+.tit h3{
+    color: #fff8f6;
+    font-size:60px;
+  
+    margin-left:auto;
+}
+
+.lin{
+     display: flex;  /* Coloca las palabra  en fila */
+     align-items: center;
+    margin-left: auto;
+    gap: 80px; 
+    
+}
+
+.lin a{
+    text-decoration: none;
+    color: #03031d;
+    font-size: 23px;
+    font-weight: 600;
+    
+}
+
+.person{
+    margin-left:auto;
+}
+
+.A{
+width: 50px;
+height: 50px;
+}
+
+
+
+.menu{
+
+    width: 100%;
+    min-height:690px;
+    background-color: #bae083;
+   
+    display:flex; /*ordena elemntos*/
+    flex-direction:column;   /* Los hijos van uno debajo del otro */
+    justify-content:space-evenly; /* centra verticalmente */
+    align-items:center; /* centra horizontalmente */
+      gap:18px; /* espacio entee los elementos */
+
+}
+
+/* todo lo que esta dentro de menu*/
+
+.titulo{
+       width:100%; 
+      display:flex; /*ordena elemntos*/
+    flex-direction:column;   /* Los hijos van uno debajo del otro */
+    justify-content:space-evenly; /* centra verticalmente */
+    align-items:center; /* centra horizontalmente */
+}
+
+.titulo h2{
+ color: #0b8c08;
+ font-size: 50px;
+ font-weight:980;
+}
+
+.titulo p{
+    
+color:#000000; 
+ font-size: 18px;
+ font-weight: 600;
+}
+
+
+.sec1{
+      display: flex;                 /* Coloca las imágenes en fila */
+    justify-content: center;       /* Centra las imágenes */
+    gap: 80px;                     /* Espacio entre imágenes */
+    width: 100%; 
+    flex-wrap:wrap;
+}
+
+.B{
+    width: 200px;
+height: 200px;
+
+}
+
+.sec2{
+      display: flex;                 /* Coloca las imágenes en fila */
+    justify-content: center;       /* Centra las imágenes */
+    gap: 80px;                     /* Espacio entre imágenes */
+    width: 100%; 
+     flex-wrap:wrap;
+}
+
+.b1{
+    width: 215px;
+    height: 215px;
+    
+    background-color: #666;
+    
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+
+
+
+@media (max-width:480px){
+
+.cabeza{
+    flex-direction:column;
+    padding:20px;
+}
+
+.lin{
+    flex-direction:column;
+    gap:15px;
+    margin:20px 0;
+}
+
+.person{
+    margin-left:0;
+}
+
+.tit h3{
+    font-size:40px;
+}
+
+.titulo h2{
+    font-size:35px;
+    text-align:center;
+}
+
+.titulo p{
+    text-align:center;
+    padding:0 15px;
+}
+
+.sec1,
+.sec2{
+    gap:20px;
+}
+
+.B{
+    width:150px;
+    height:150px;
+}
+
+.b1{
+    width:170px;
+    height:170px;
+}
+
+}
